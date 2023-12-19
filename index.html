@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C portfolio</title>
+    <Style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: lightgray;
+        }
+
+        .pic {
+            height: 300px;
+        }
+
+        main {
+            background-color: lightgray;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 20px;
+           
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>aldrian Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="navigateTo('home')">HOME</a></li>
+                    <li><a href="#" onclick="navigateTo('about')">ABOUT</a></li>
+                    <li><a href="#" onclick="navigateTo('projects')">PROJECTS</a></li>
+                    <li><a href="#" onclick="navigateTo('repositories')">RESPOSITORYS</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    
+    <main id="home" class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <p>"It's not a bug, it's a feature"</p>
+        <img class="pic" src="doc.gif" alt="">
+    </main>
+
+    <main id="about" class="container" style="display: none;">
+        <h2 class="container">About Me</h2>
+        <br><br><br>
+        <img class="pic" src="p.jpg" alt="">
+        <h5>Name: aldrian cayumoc</h5>
+        <h5>HP: 45 nalang na bilin</h5>
+        <h5>level 3</h5>
+        <br>
+        <h5>Race: ninja</h5>
+        <h5>Class: IT Student</h5>
+        <h5>Age: 16</h5>
+        <h5>GitHub Codename: <a href="https://github.com/aldrian03">PinkyBabe</a></h5>
+        <br>
+        <h3>hubbys:</h3>
+        <br>
+        <h5>"watching movies"</5>
+        <h5>"playing mobilr legend"</h5>
+        <h5>"editing"</h5>
+        <h5>"Programming"</h5>
+        <h5>"sleep"</h5>
+    </main>
+
+    <main id="projects" class="container" style="display: none;">
+        <h2>Projects</h2>
+        <br><br>
+        <div class="project">
+            <h3><a href="https://github.com/aldrian03/Cayomoc">Cayomoc</a></h3>
+        </div>
+       
+    </main>
+    <main id="repositories" class="container">
+        <div class="container">
+        <h2>Repositories</h2>
+        </div>
+
+        <br><br>
+        
+        <div class="project">
+            <h3><a href="https://github.com/aldrian03/Cayomoc.A-IT24B">Cayomoc.A-IT24B</a></h3>
+        </div>
+      
+
+        <br><br>
+        
+        <div class="project">
+            <h3><a href="https://github.com/aldrian03/logo-facebook">logo-facebook</a></h3>
+        </div>
+      
+        <br><br>
+        
+        <div class="project">
+            <h3><a href="https://github.com/aldrian03/IT24">IT24</a></h3>
+        </div>
+        
+        <br><br>
+        
+        <div class="project">
+            <h3><a href="https://github.com/aldrian03/single-page-portfolio">single-page-portfolio</a></h3>
+        </div>
+    </main>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+
+</html>
